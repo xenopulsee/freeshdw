@@ -2,7 +2,25 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <title>Life Is now...Are You Going To be There Or not?</title>
+  <meta> charset="UTF-8" />
+  <title>freeshdw</title>
+  <link rel = "stylesheet" href = "./js/katex/katex.min.css" />
+  <script type="text/javascript" defer src = "./js/katex/katex.min.js"></script>
+  <script type="text/javascript" defer src = "./js/katex/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+  <script type="text/javascript">
+    ![CDATA[
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      })
+    ]]
+    </script>
   <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
   <style type="text/css">
@@ -24,7 +42,14 @@ body {
 a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.formula {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 a img {
@@ -38,9 +63,14 @@ a img {
   </style>
 </head>
 <body>
-  <a href="https://freeshdw.bandcamp.com/">
+  <!-- <a href="https://freeshdw.bandcamp.com/">
     <img src="crash.jpg" />
-  </a>
+  </a> -->
+  <p> This is a \LaTeX\ test.</p>
+  <div class="formula">
+      $$\Delta M_i^{-1} = -\alpha \sum_{n=1}^N D_i[n] 
+        \left[ \sum_{j \in C[i]} F_{ji}[n-1] + Fext_i[n^{-1}] \right]$$
+    </div>
 </body>
 </html>
 
