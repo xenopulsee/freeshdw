@@ -2,25 +2,23 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <meta> charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
   <title>freeshdw</title>
-  <link rel = "stylesheet" href = "./js/katex/katex.min.css" />
-  <script type="text/javascript" defer src = "./js/katex/katex.min.js"></script>
-  <script type="text/javascript" defer src = "./js/katex/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body);"></script>
+  <link rel="stylesheet" href="./js/katex/katex.min.css" />
+  <script type="text/javascript" src="./js/katex/katex.min.js" defer="defer"></script>
+  <script type="text/javascript" src="./js/katex/contrib/auto-render.min.js" defer="defer"></script>
   <script type="text/javascript">
-    ![CDATA[
-      document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "\\(", right: "\\)", display: false},
-            {left: "\\[", right: "\\]", display: true}
-          ]
-        });
-      })
-    ]]
-    </script>
+//<![CDATA[
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "\\(", right: "\\)", display: false}
+      ]
+    });
+  });
+//]]>
+</script>
   <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
   <style type="text/css">
