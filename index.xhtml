@@ -31,6 +31,7 @@ html, body {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
@@ -39,8 +40,9 @@ body {
 a {
   display: block;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  gap: 2rem;
   font-size: 2rem;
 }
 
@@ -59,8 +61,6 @@ a img {
     <img src="crash.jpg" />
   </a> -->
   <p> This is a LaTeX test.</p>
-  <br />
-  <br />
   <div class="formula">
       $$\Delta M_i^{-1} = -\alpha \sum_{n=1}^N D_i[n] 
         \left[ \sum_{j \in C[i]} F_{ji}[n-1] + Fext_i[n^{-1}] \right]$$
