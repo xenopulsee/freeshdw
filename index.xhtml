@@ -1,21 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
-  <head>
-    <title>freeshdw</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style type="text/css">
-      #links { max-width:720px; margin:2rem auto 1rem; padding:0 1rem; font:16px/1.5 system-ui; }
-      #links a { margin-right:.5rem; text-decoration:none; }
-    </style>
-  </head>
-  <body>
-    <div id="links" role="navigation">
-      <a href="https://git.freeshdw.com">git</a> &#183;
-      <a href="/now/">/now</a> &#183;
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt" data-theme="auto">
+<head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>freeshdw</title>
+  <style type="text/css">
+    /* theme */
+    :root {
+      --bg: #232323;
+      --fg: #f8fafc;
+      --muted: #aaaaaa;
+      --link: #2dd4bf;
+      --link-hover: #f8fafc;
+      --accent: #BF24FB;
+      --accent-2: #d678fb; 
+      --accent-3: #57698e;
+      --soft: #383838;
+      --hr: #75d6c9;
+      --code-bg: #787878;
+      --table-row: #383838;
+    }
+    /* typography, layout */
+    html, body { height: 100%; }
+    body {
+      margin: 0 auto;
+      padding: 24px 0 16px 0;
+      width: 90%;
+      max-width: 880px;
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: monospace;
+      line-height: 1.55;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+
+    img { max-width: 100%; height: auto; }
+
+    h1 { text-align: center; font-style: bold; font-family: serif; color: var(--accent-3); margin: 0.4em 0 0.2em 0; }
+
+    hr { background-color: var(--hr); border: 0; height: 4px; margin: 24px 0; }
+
+    /* header */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .brand { font-weight: 700; letter-spacing: 0.5px; }
+    .modes { display: inline-flex; align-items: center; gap: 8px; }
+  </style>
+
+</head>
+<body>
+  <div class="topbar">
+    <div>
+      <a href="/" class="brand">freeshdw</a>
+    </div>
+    <div class="modes">
+      <a href="/now">/now</a>
+      <a href="https://git.freeshdw.com">git</a>
       <a href="https://freeshdw.bandcamp.com/">music</a>
     </div>
-  </body>
+  </div>
+  <div style="text-align:center;">
+  <img src="1free23.png" />
+</div>
+</body>
 </html>
